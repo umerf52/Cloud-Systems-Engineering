@@ -1,0 +1,7 @@
+# ignore build assets
+/client
+/libutils.so
+/server
+/message.pb.cc
+/message.pb.h
+/tests/test_client_testserver

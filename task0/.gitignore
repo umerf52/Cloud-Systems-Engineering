@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+/client
+/libutils.so
+/server
+/message.pb.cc
+/message.pb.h
+/tests/test_client_testserver
+
+/.vscode/
+*.out

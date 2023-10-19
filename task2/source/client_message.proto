@@ -1,0 +1,22 @@
+syntax = "proto2";
+
+package sockets;
+
+message msg {
+  enum OperationType {
+    PUT    = 1;
+    GET    = 2;
+    SERVER = 3;
+    REPLY  = 4;
+    MASTER_PUT = 5;
+    REORG = 6;
+    REORG_PUT = 7;
+  }
+
+  required OperationType type = 1;
+  optional int32 key          = 2;
+  optional string value       = 3;
+  optional int32 port         = 4;
+  optional int32 status        = 5;
+
+}

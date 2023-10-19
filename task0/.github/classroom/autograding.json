@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Build",
+      "setup": "",
+      "run": "timeout -s9 2m make all",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Test single threaded client",
+      "setup": "",
+      "run": "timeout -s9 2m python3 tests/test_client_singlethreaded.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Test single threaded server",
+      "setup": "",
+      "run": "timeout -s9 2m python3 tests/test_server_singlethreaded.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Test single threaded server using Docker",
+      "setup": "",
+      "run": "timeout -s9 2m python3 tests/test_server_singlethreaded_docker.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    }
+  ]
+}
